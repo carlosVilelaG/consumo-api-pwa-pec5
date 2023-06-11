@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1686459843051,
+  "index": "/consumo-api-pwa-pec5/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/consumo-api-pwa-pec5/favicon.ico",
+        "/consumo-api-pwa-pec5/index.html",
+        "/consumo-api-pwa-pec5/main.4811c1ccf99f4c5a.js",
+        "/consumo-api-pwa-pec5/manifest.webmanifest",
+        "/consumo-api-pwa-pec5/polyfills.7dcd5b3e57d43cae.js",
+        "/consumo-api-pwa-pec5/runtime.507af142f9b4ac8e.js",
+        "/consumo-api-pwa-pec5/styles.e06a9809e0fa01f5.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/consumo-api-pwa-pec5/assets/css/animate.css",
+        "/consumo-api-pwa-pec5/assets/icons/icon-128x128.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-144x144.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-152x152.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-192x192.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-384x384.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-512x512.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-72x72.png",
+        "/consumo-api-pwa-pec5/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "album-api",
+      "patterns": [
+        "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/consumo-api-pwa-pec5/assets/css/animate.css": "1a1f22a40beae7a4bf83ff81f7c6b8be7cfd7e59",
+    "/consumo-api-pwa-pec5/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/consumo-api-pwa-pec5/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/consumo-api-pwa-pec5/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/consumo-api-pwa-pec5/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/consumo-api-pwa-pec5/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/consumo-api-pwa-pec5/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/consumo-api-pwa-pec5/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/consumo-api-pwa-pec5/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/consumo-api-pwa-pec5/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/consumo-api-pwa-pec5/index.html": "65902ed81dd1013dcaca3ab00dccac1cd4f3fe4b",
+    "/consumo-api-pwa-pec5/main.4811c1ccf99f4c5a.js": "cacca88549d1fa3cc09328ff77b74ef1a2b2ec14",
+    "/consumo-api-pwa-pec5/manifest.webmanifest": "baf94205144ae68d2b5229416e5de1bcac33791f",
+    "/consumo-api-pwa-pec5/polyfills.7dcd5b3e57d43cae.js": "d396c5ed57fae5b14842522f11c08ab72476e321",
+    "/consumo-api-pwa-pec5/runtime.507af142f9b4ac8e.js": "878d750a32d2b3232a2428698452eac4eef207ba",
+    "/consumo-api-pwa-pec5/styles.e06a9809e0fa01f5.css": "678cadd702d0344fe9bcdd18725c36697210f248"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
