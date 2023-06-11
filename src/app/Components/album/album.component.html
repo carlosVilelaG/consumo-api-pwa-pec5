@@ -1,0 +1,31 @@
+<h2 style="align-items: center;">Detalis Albumes</h2>
+<mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title><h1>Title</h1></mat-panel-title>
+        <mat-panel-description><h1>{{album.title}}</h1></mat-panel-description>
+      </mat-expansion-panel-header>
+      
+      <div class="container mt-5">
+        <div *ngIf="album" class="row animate__animated animate__bounce animate__fadeIn">
+            <div class="col-md-9">
+                <p><strong>Album Id:</strong>{{album.id}}</p>
+                <p><strong>Tema Id:</strong>{{album.albumId}}</p>
+                <p><strong>Thumbnail-Url:</strong>{{album.thumbnailUrl}}</p>
+                <p><strong>Publicated by:</strong>Carlos Vilela</p>
+                <p>Las imagenes son consultadas desde el Api y estan atadas a cada registro de Album, se hace la simulacion de una imagen modificadas el color de fondo, asi se se encentra e el origen</p>
+                <p>Imagen miniatura real atada a este registro seleccionado, campo Thumbnail-Url,  <a  href="{{album.thumbnailUrl}}" target="_blank">ver imagen de api</a></p>
+                <p>Imagen de tamaño mayor que la visualizamos abajo, para dirigirse al sitio de la imagen atada a este registro seleccionado, campo url, <a  href="{{album.url}}" target="_blank">ver imagen</a></p>
+                <img style="width: 60%; height: 60%;" class="rounded"
+                src="{{album.url}}" alt="">
+
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-danger" routerLink="/">Back</a>
+            </div>
+        </div>
+      </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>

@@ -1,0 +1,8 @@
+<div [@cardsAnimation]="animationState">
+    <div *ngFor="let album of albumes">
+      <app-cards
+        [item]="album"
+      ></app-cards>
+    </div>
+  </div>
+  
